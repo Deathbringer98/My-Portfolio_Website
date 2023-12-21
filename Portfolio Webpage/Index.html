@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matthew Menchinton - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Matthew Menchinton</h1>
+    <h2>Software/Web Developer</h2>
+  </header>
+
+  <main>
+    <section>
+      <h3>About Me</h3>
+      <div class="profile-container">
+        <img src="images/ssme.png" alt="Matthew Menchinton" class="profile-image">
+      </div>
+      <div class="introduction">
+        <p>Hello, I'm Matthew Menchinton, a dedicated software development student currently enrolled at Keyin College. My passion lies in the dynamic field of artificial intelligence, where I aspire to contribute to both front-end and back-end development. I pride myself on effective communication and collaborative skills, fostering a positive and productive working environment with fellow developers. Enthusiastic about taking on new challenges, I'm always eager to engage in exciting projects that allow me to expand my skills and contribute to innovative solutions in the world of technology.</p>
+      </div>
+    </section>
+
+    <section>
+      <h3>Projects</h3>
+      <div class="project-container">
+        <div class="project-box" onclick="openProject('project1')" data-project="project1">
+          <h3>Project 1</h3>
+          <a href="https://github.com/Deathbringer98/solar-system-simulation" target="_blank">
+            <img src="/images/sun.gif" alt="Project 1 Image">
+          </a>
+          <p>Experience the marvels of our solar system through a captivating 2D simulation crafted with JavaScript and HTML5 canvas. This project brings the beauty of planetary motion to life, allowing you to observe realistic orbits and rotations of planets around the sun.<br><br>
+
+            Key Features:
+            
+            Realistic 2D representation of the solar system.
+            Planets dynamically rotate around the sun with accurate speeds and distances.
+            Customize each planet's attributes such as size, color, orbital distance, and rotational speed.</p>
+        </div>
+        <div class="project-box" onclick="openProject('project2')" data-project="project2">
+          <h3>Project 2</h3>
+          <a href="https://github.com/Deathbringer98/React-app-dog-api" target="_blank">
+            <img src="/images/dogapi.jpg" alt="Project 2 Image">
+          </a>
+          <p>The Dog API Web Program is an interactive and visually appealing application that leverages the capabilities of the Dog API. This web-based application allows users to explore and discover a vast array of dog images and information with just a few clicks.</p>
+        </div>
+        <div class="project-box" onclick="openProject('project3')" data-project="project3">
+          <h3>Project 3</h3>
+          <a href="https://github.com/Deathbringer98/YT-Audio_Downloader" target="_blank">
+            <img src="/images/AudioDownloader.gif" alt="Project 3 Image">
+          </a>
+          <p>YT-Audio_Downloader is a Python tool simplifying the download of audio from YouTube videos. Additionally, the YouTube Audio Player code enhances the experience by allowing immediate playback of downloaded content. With easy installation and usage, this program caters to users who seek a straightforward solution for enjoying YouTube audio offline.</p>
+        </div>
+      </div>
+      <!-- Add a button to reset highlighting -->
+      <button id="reset-button" onclick="resetHighlight()">Reset Highlight</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+
+  <footer>
+    <center><h3>Contact Me</h3>
+    <p>For any inquiries email me at:</p>
+    <p><a href="mailto:matthew.menchinton@keyin.com">matthew.menchinton@keyin.com</a></p></center>
+  </footer>
+</body>
+</html>
